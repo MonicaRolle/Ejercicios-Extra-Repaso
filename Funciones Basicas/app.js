@@ -43,5 +43,13 @@ function concatenarString(texto1,texto2,texto3){
 console.log(concatenarString("La abuela"," te quiere ", "un montón."))
 
 // Implementa una función que admita como parámetro un objeto y añada a dicho objeto una propiedad llamada ‘id’ inicializada a null.
+var empleado = {
+    name: "Javi",
+}
 
+function crearPropiedad(){
+    empleado.id = "";
+}
+crearPropiedad();
+console.log(empleado);
 
