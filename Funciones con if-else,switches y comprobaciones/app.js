@@ -1,11 +1,13 @@
 // Implementa una función que admita un parámetro, de cualquier tipo, y que compruebe si el parámetro es undefined o null .
+function define(para) {
+    if ()
 
+}
 
 
 // Implementa una función que admita un número como parámetro y devuelva si el número es positivo o negativo.
-function negativeOrPositive(number) {
-    number < 0 ? console.log("Negativo") : console.log("Positivo")
-}
+var negativeOrPositive = (number) => number < 0 ? console.log("Negativo") : console.log("Positivo")
+
 negativeOrPositive(-2);
 
 // Implementa una función que admita un número como parámetro y diga, por consola, si es mayor que 100, menor que 100 o exactamente 100.
