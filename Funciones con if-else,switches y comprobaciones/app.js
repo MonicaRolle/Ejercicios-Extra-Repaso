@@ -46,19 +46,20 @@ var objectHasName = (obj) => {
     // console.log(objectHasName(user))
 
 // Implementa una función que admita 2 números como argumento y compruebe si el primero es divisible por el segundo.
-function divisible(a, b) {
-    if (a % b == 0) {
-        console.log(a + " es divisible por " + b)
-    } else {
+/**
+ * Esta función comprueba si a es divisible entre b
+ * @param {*} a Este es el dividendo
+ * @param {*} b  Este es el divisor
+ * @returns 
+ */
+var isDivisible = (a, b) => (a % b === 0);
 
-        console.log(a + " no es divisible por " + b)
-    }
-}
-divisible(8, 3)
+console.log(isDivisible(9, 3))
 
 // Implementa una función que admita un string y un número como parámetro, y comprobar que tienen ese número de caracteres.
+var numberCharters = (str, n) => str.length == n;
 
-
+console.log(numberCharters("cinco", 3))
 
 // Implementa una función que admita un día de la semana en formato número (del 1 al 7) y devuelva que día de la semana es (en texto).
 function dayOfWeek(day) {
@@ -134,7 +135,21 @@ monthOfYear(3);
 
 
 // Implementa una función que admita 2 arrays como argumento, y devuelva el array más largo.
+array1 = [1, 2, 34, 214, 45, 3];
+array2 = [1, 5, 46, 8, 3]
+var lengthArray = (array1, array2) => {
+    if (array1.length > array2.length) {
+        return "Array1 es más largo"
+    } else if (array1.length < array2.length) {
+        return "Array2 es más largo"
+    } else {
+        return "Array1 es igual a Array2"
+    }
+}
 
-
+console.log(lengthArray(array1, array2))
 
 // Implementa una función que admita 2 arrays como argumento, y devuelva si el primer elemento de ambos arrays es igual o no.
+var equalsArray = (arry1, arry2) => arry1[0] === arry2[0]
+
+console.log(equalsArray(array1, array2))
