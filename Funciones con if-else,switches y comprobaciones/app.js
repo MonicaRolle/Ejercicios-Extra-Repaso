@@ -1,9 +1,10 @@
 // Implementa una función que admita un parámetro, de cualquier tipo, y que compruebe si el parámetro es undefined o null .
-function define(para) {
-    if ()
+function isNullOrUndefined(parameter) {
+    (parameter === undefined || parameter === null) ? true: false;
 
 }
 
+console.log(isNullOrUndefined(""))
 
 // Implementa una función que admita un número como parámetro y devuelva si el número es positivo o negativo.
 var negativeOrPositive = (number) => number < 0 ? console.log("Negativo") : console.log("Positivo")
@@ -23,11 +24,26 @@ function mayorMenorOIgual(number) {
 mayorMenorOIgual(101)
 
 // Implementa una función que admita como parámetro un objeto y devuelva si dicho objeto tiene una propiedad ‘name’ o no.
+user = {
+    name: "Javi",
+    edad: 23,
+    ojos: "azules",
+}
 
-// function nameOrNot(object) {
-//     if (object)
-// }
+function nameOrNot(object) {
+    if (object.name !== undefined) return object;
+}
 
+console.log(nameOrNot(user))
+var objectHasName = (obj) => {
+        if (obj.hasOwnProperty("name")) {
+            return obj;
+        } else {
+            return "El objeto no tiene la propiedad";
+        }
+
+    }
+    // console.log(objectHasName(user))
 
 // Implementa una función que admita 2 números como argumento y compruebe si el primero es divisible por el segundo.
 function divisible(a, b) {
