@@ -136,7 +136,7 @@ monthOfYear(3);
 
 // Implementa una función que admita 2 arrays como argumento, y devuelva el array más largo.
 array1 = [1, 2, 34, 214, 45, 3];
-array2 = [1, 5, 46, 8, 3]
+array2 = [2, 5, 46, 8, 3]
 var lengthArray = (array1, array2) => {
     if (array1.length > array2.length) {
         return "Array1 es más largo"
@@ -151,5 +151,7 @@ console.log(lengthArray(array1, array2))
 
 // Implementa una función que admita 2 arrays como argumento, y devuelva si el primer elemento de ambos arrays es igual o no.
 var equalsArray = (arry1, arry2) => arry1[0] === arry2[0]
+var arrayPosition = (arry1, arry2) => Array.isArray(arry1) && Array.isArray(arry2) && arry1[0] === arry2[0]
 
 console.log(equalsArray(array1, array2))
+console.log(arrayPosition(array1, array2))
